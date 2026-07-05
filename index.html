@@ -17,39 +17,40 @@
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    padding: 4rem 1.5rem;
+    padding: 2rem 1.5rem;
     background: #ffffff;
     color: #000000;
     font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300;
-    line-height: 1.6;
-    font-size: 1.05rem;
+    line-height: 1.45;
+    font-size: 0.95rem;
   }
   main {
-    max-width: 34rem;
+    max-width: 42rem;
     margin: 0 auto;
   }
   h1 {
     font-weight: 500;
-    font-size: 1.6rem;
-    margin: 0 0 1.5rem;
+    font-size: 1.4rem;
+    margin: 0 0 1rem;
   }
   h2 {
     font-weight: 500;
-    font-size: 1rem;
-    margin: 2.5rem 0 1rem;
+    font-size: 0.95rem;
+    margin: 0 0 0.5rem;
     letter-spacing: 0.05em;
+    text-transform: lowercase;
   }
   p {
-    margin: 0 0 1.2rem;
+    margin: 0 0 0.8rem;
   }
   ul {
     list-style: none;
     padding: 0;
-    margin: 0.5rem 0 0;
+    margin: 0;
   }
   li {
-    margin: 0 0 0.7rem;
+    margin: 0 0 0.35rem;
   }
   a {
     color: #000000;
@@ -63,6 +64,15 @@
     color: #000000;
     border-bottom: 1px dotted #999999;
   }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+    margin-top: 1.5rem;
+  }
+  @media (max-width: 480px) {
+    .links { grid-template-columns: 1fr; gap: 1.25rem 0; }
+  }
 </style>
 </head>
 <body>
@@ -75,31 +85,35 @@
 
   <p>In my spare time I cycle, take photos for pleasure, swim wherever I can, hang out with my partner <a href="https://www.iamhutton.com">Emma</a> and our rescue cat Myrtle, obsessively learn random things, and try to enjoy everything London offers. I was diagnosed with ADHD in 2021, and have <a href="https://andy-matthews.co.uk/blog/2021/08/09/adhd-at-aged-42-and-1-2/">written about</a> my <a href="https://andy-matthews.co.uk/blog/2021/10/19/the-adhd-drugs-do-work/">experience </a> and helped many others since.</p>
 
-  <h2>Studio</h2>
-  <ul>
-    <li><a href="https://www.andymatthews.studio">Andy Matthews. Studio →</a></li>
-    <li><a href="https://www.instagram.com/andymatthews.studio/">Instagram @andymatthews.studio →</a></li>
-    <li><a href="https://www.instagram.com/ams.pastebook/">Instagram @ams.pastebook →</a></li>
-    <li><a href="https://www.linkedin.com/company/andymatthews-studio/">LinkedIn →</a></li>
-    <li><a href="https://uk.pinterest.com/andymatthewsstudio/">Pinterest →</a></li>
-    <li><a href="https://www.youtube.com/@AndyMatthewsStudio/videos/">YouTube →</a></li>
-    <li><a href="https://www.flickr.com/photos/andymatthews-studio/">Flickr →</a></li>
-    
-  </ul>
+  <div class="links">
+    <section>
+      <h2>Studio</h2>
+      <ul>
+        <li><a href="https://www.andymatthews.studio">Andy Matthews. Studio</a></li>
+        <li><a href="https://www.instagram.com/andymatthews.studio/">Instagram @andymatthews.studio</a></li>
+        <li><a href="https://www.instagram.com/ams.pastebook/">Instagram @ams.pastebook</a></li>
+        <li><a href="https://www.linkedin.com/company/andymatthews-studio/">LinkedIn</a></li>
+        <li><a href="https://uk.pinterest.com/andymatthewsstudio/">Pinterest</a></li>
+        <li><a href="https://www.youtube.com/@AndyMatthewsStudio/videos/">YouTube</a></li>
+        <li><a href="https://www.flickr.com/photos/andymatthews-studio/">Flickr</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Personal</h2>
+      <ul>
+        <li><a href="https://andy-matthews.co.uk">Blog</a></li>
+        <li><a href="https://www.instagram.com/andymatthews/">Instagram @andymatthews</a></li>
+        <li><a href="https://www.linkedin.com/in/andymatthewsarchitect/">LinkedIn</a></li>
+        <li><a href="https://www.flickr.com/photos/ginja_andy/">Flickr</a></li>
+        <li><a href="https://andymatthews.photo">andymatthews.photo</a></li>
+        <li><a href="https://www.strava.com/athletes/2999735">Strava</a></li>
+        <li><a href="https://ridewithgps.com/users/318240">Ride with GPS</a></li>
+        <li><a href="https://buttondown.com/andymatthews">Occasional Links</a></li>
+      </ul>
+    </section>
+  </div>
 
-  <h2>Personal</h2>
-  <ul>
-    <li><a href="https://andy-matthews.co.uk">Blog →</a></li>
-    <li><a href="https://www.instagram.com/andymatthews/">Instagram @andymatthews →</a></li>
-    <li><a href="https://www.linkedin.com/in/andymatthewsarchitect/">LinkedIn →</a></li>
-    <li><a href="https://www.flickr.com/photos/ginja_andy/">Flickr →</a></li>
-    <li><a href="https://andymatthews.photo">andymatthews.photo →</a></li>
-    <li><a href="https://www.strava.com/athletes/2999735">Strava →</a></li>
-    <li><a href="https://ridewithgps.com/users/318240">Ride with GPS →</a></li>
-    <li><a href="https://buttondown.com/andymatthews">Occasional Links →</a></li>
-  </ul>
-
-  <p style="margin-top: 2.5rem;">You can email me at: <a href="mailto:hello@andymatthews.studio">hello@andymatthews.studio</a></p>
+  <p style="margin-top: 1.5rem;">You can email me at: <a href="mailto:hello@andymatthews.studio">hello@andymatthews.studio</a></p>
 </main>
 </body>
 </html>
